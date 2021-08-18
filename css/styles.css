@@ -14,6 +14,14 @@
     background-size: cover;
 }
 
+.main2{
+  background-color: rgb(29, 233, 97);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .img-container{
     display: flex;
     flex-direction: column;
@@ -21,7 +29,7 @@
 
 .linea
 {
-    height:50px;
+    height:10px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -29,7 +37,7 @@
     align-items: center;
     align-content: center;
     position: absolute;
-    bottom: 50px;
+    bottom: 10px;
     right: 800px;
 }
 
@@ -55,8 +63,9 @@
 }
 
 .img_login_background{
-    background-image: url("/images/rapaz_Login.jpg");
-    height: 150px;
+    background-image: url("../images/login.jpg");
+    height: 1200px;
+    background-repeat:no-repeat;
 }
 
 .img_template {
@@ -65,5 +74,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
 
