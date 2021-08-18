@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Envios internacionales. Web tracking internacional y flexibilidad horaria. Seguimiento y rastreo de envios y cargas. Despachos aduaneros. Picking Packing. Depósitos Propios."> 
-    <meta name="keywords" content="html, PHP, JS, JAVA, META, NODE, TS, Logistica, Envios, Paquetería, Paquetes, Delivery, Cargo, Envios internacionales">
+    <meta name="description"
+        content="Envios internacionales. Web tracking internacional y flexibilidad horaria. Seguimiento y rastreo de envios y cargas. Despachos aduaneros. Picking Packing. Depositos Propios.">
+    <meta name="keywords"
+        content="html, PHP, JS, JAVA, META, NODE, TS, Logistica, Envios, Paquetería, Paquetes, Delivery, Cargo, Envios internacionales">
     <title>Rapaz Group</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -15,21 +17,127 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
 
+    <nav class="navbar navbar-expand-sm bg-white navbar-light">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+            <img src="../eagleGroup/images/rapaz_LogoMenu.jpg" width="100" height="50" class="d-inline-block align-top"
+                alt=""></a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#TeAyudamos">Te ayudamos</a>
+            </li>
+            <li class="nav-item dropdown" id="myDropdown"></li>
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Servicios</a>
+            <ul class="dropdown-menu">
+                <li> <a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Cotizador">Cotizador</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+        </ul>
+    </nav>
+
+
     <div class="main">
-        
+
         <div>
-            <img src="../rapazGroup/images/2.png"/>
+            <img src="../eagleGroup/images/2.png" />
         </div>
         <div class="linea">
             <a href="cliente.html" class="btn btn-light btn-sm mr-5 custom"><i class="fa fa-user-plus"></i> Cliente</a>
-            <a href="https://google.com" class="btn btn-light btn-sm mr-5 custom"><i class="fa fa-user-times"></i> No Cliente</a>
+            <a href="https://google.com" class="btn btn-light btn-sm mr-5 custom"><i class="fa fa-user-times"></i> No
+                Cliente</a>
         </div>
-        
+
 
     </div>
+
+    <div class="">
+
+        <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+    
+            <div id="TeAyudamos">
+                <!-- Inner -->
+                <div class="carousel-inner">
+                    <!-- Single item -->
+                    <div class="carousel-item active">
+                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" class="d-block w-100"
+                            alt="..." />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Single item -->
+                    <div class="carousel-item">
+                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg" class="d-block w-100"
+                            alt="..." />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Single item -->
+                    <div class="carousel-item">
+                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg" class="d-block w-100"
+                            alt="..." />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inner -->
+    
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample"
+                    data-mdb-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample"
+                    data-mdb-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    
+        </div>
+
+    </div>
+
+   
+
 
 </body>
